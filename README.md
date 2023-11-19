@@ -21,17 +21,17 @@ to obtain the expected loss . My project is focous on Probability of default or 
 just simple explanition of two other componet,LGD It is the proportion of the total exposure that cannot be recovered by the lender once default hasoccurred and EDA is the maximum that a bank may lose when a borrower defaults on a loan. Let's build the model together!
 
 
-Important definition
+# Important definition
 
 - Default: The event of a borrower being unable to make the required payments to repay their debt is called default.
 - EL:Expected loss is the amount a lender might lose by lending to a borrower.
 - Component of EL :PD*LGD*EAD
 
 
-Goal of the project
+# Goal of the project
 - Predict the probability of the default.  
 
-Dataset 
+# Dataset 
 - Main dataset is stored in MySQL database ==>loan_data_bank.csv===> Quality_Check_Data_Preprocessing.ipynb
 -clean_data.csv===> for Credit _Risk_Modelling.ipynb
 -loan_data_2015===> Unseendata 
@@ -39,14 +39,14 @@ Dataset
 The link that you can have a direct access to datasets:
 https://drive.google.com/file/d/1fm_Tgn6peNfo0RmX-l56LqwDBzf30ZfQ/view?usp=drive_link
 
-Tableau Public link
+# Tableau Public link
 This is the link : https://public.tableau.com/app/profile/parinaz.mohammadi/viz/Insighttodatasetofcreditriskmodelling/Dashboard1?publish=yes
 
-Notebooks
+# Notebooks
 - You can find Quality data cheack and data Preprocessing  in the Quality_Check_Data_Preprocessing.ipyn and I saved it as "clean_data.csv"
 - You can find Modelling process in Credit _Risk_Modelling.ipynb
 
-Dictionary of the data for final 21 features
+# Dictionary of the data for final 21 features
 
 - loan_amnt: The listed amount of the loan applied for by the borrower. If at some point in time, the credit department reduces the loan amount, then it will be reflected in this value.
 - term: The number of payments on the loan. Values are in months and can be either 36 or 60.
@@ -70,7 +70,7 @@ Dictionary of the data for final 21 features
 - annual_inc_bins_encoder: The self-reported annual income provided by the borrower during registration- I changed to the bin and then covert it ito dummy by labelencoder
 - good bad: default borrower=0 non-default=1
 
-My approach 
+# My approach 
 - Data quality check
 - Preprossing the data such as log-transformation ,quantile cut.
 - Spiliting data To X and y(target)-then spilit to tarian and test
